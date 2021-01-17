@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Produk</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="icon/css/all.min.css" />
+    <script src="icon/js/all.js"></script>
+</head>
+<body>
+    <aside>
+      <div class="profil">
+        <img src="1.jpg" />
+        <p>Feillany Maemu</p>
+        <p class="x">X</p>
+      </div>
+
+      <div class="fitur">
+        <a href="index.html">
+          <div class="perfitur">
+            <div class="fas fa-home icon"></div>
+            <p>Home</p>
+          </div>
+        </a>
+
+        <a href="produk.html">
+          <div class="perfitur">
+            <div class="fas fa-cart-arrow-down icon"></div>
+            <p>Produk</p>
+          </div>
+        </a>
+
+        <a href="konfirmasiProduk.html">
+          <div class="perfitur">
+            <div class="fas fa-clipboard-check icon"></div>
+            <p>Konfirmasi Pembelian</p>
+          </div>
+        </a>
+
+        <a href="pelanggan.html">
+          <div class="perfitur">
+            <div class="fas fa-users icon"></div>
+            <p>Pelanggan</p>
+          </div>
+        </a>
+
+        <a href="artikel.html">
+          <div class="perfitur">
+            <div class="fas fa-newspaper icon"></div>
+            <p>Artikel</p>
+          </div>
+        </a>
+
+        <a href="galeri.html">
+          <div class="perfitur">
+            <div class="fas fa-image icon"></div>
+            <p>Galeri</p>
+          </div>
+        </a>
+
+        <a href="kategori.html">
+          <div class="perfitur">
+            <div class="fas fa-file icon"></div>
+            <p>Kategori</p>
+          </div>
+        </a>
+
+        <a href="komentar.html">
+          <div class="perfitur">
+            <div class="fas fa-mail-bulk icon"></div>
+            <p>Komentar</p>
+          </div>
+        </a>
+
+        <a href="logout.html">
+          <div class="perfitur">
+            <div class="fas fa-sign-out-alt icon"></div>
+            <p>Logout</p>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+
+    <div class="navbar">
+      <div class="menu">
+        <input type="checkbox" name="" />
+        <span class="satu"></span>
+        <span class="dua"></span>
+        <span class="tiga"></span>
+      </div>
+
+      <div class="mobileNavbar">
+        <input type="checkbox" name="" />
+        <span class="satu"></span>
+        <span class="dua"></span>
+        <span class="tiga"></span>
+      </div>
+
+      <form class="formNavbar" method="get">
+        <input type="text" placeholder="Search" name="keyword" />
+        <button class="btn cari" name="cari">Cari</button>
+      </form>
+    </div>
+
+
+
+
+    <main>
+      <h2>Daftar Galeri</h2>
+
+      <div class="galeri">
+        <div class="row">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+          <img src="1.jpg">
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <footer>
+      <h3>
+        Copyright <i class="far fa-copyright"></i> 2020.
+        <a href="">Ikki Rama .</a>
+      </h3>
+      <p>All rights reserved.</p>
+    </footer>
+
+
+
+
+<script type="text/javascript">
+  const menu = document.querySelector('.menu')  
+  const aside = document.querySelector('aside')
+  const main = document.querySelector('main')
+  const footer = document.querySelector('footer')
+  const navbar = document.querySelector('.navbar')
+  const x = document.querySelector('.x')
+
+  console.log(window.innerWidth)
+
+
+  menu.addEventListener('click',()=>{
+    aside.classList.toggle('capHiden')
+    main.classList.toggle('padingBaru')
+    footer.classList.toggle('padingBaru')
+    navbar.classList.toggle('padingBaru')
+  })
+
+  const mobileNavbar = document.querySelector('.mobileNavbar')
+  mobileNavbar.addEventListener('click',()=>{
+    aside.classList.add('tampilCap')
+  })
+
+  x.addEventListener('click',()=>{
+    aside.classList.remove('tampilCap')
+  })
+
+</script>
+
+</body>
+</html>
